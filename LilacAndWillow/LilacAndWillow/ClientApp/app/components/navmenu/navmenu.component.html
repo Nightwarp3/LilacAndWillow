@@ -7,7 +7,9 @@
                 <span class='icon-bar'></span>
                 <span class='icon-bar'></span>
             </button>
-            <a class='navbar-brand' [routerLink]="['/home']">Lilac & Willow</a>
+            <a class='navbar-brand' [routerLink]="['/home']">
+                <img src="../../resources/LWSubtleNoBackground.png" width="50" />
+            </a>
             <div class="navbar-collapse collapse">
                 <ul class='nav navbar-nav'>
                     <li [routerLinkActive]="['link-active']">
@@ -16,12 +18,12 @@
                         </a>
                     </li>
                     <li [routerLinkActive]="['link-active']">
-                        <a [routerLink]="['/counter']">
+                        <a [routerLink]="['/gallery']">
                             <span class='glyphicon glyphicon-education'></span> Gallery
                         </a>
                     </li>
                     <li [routerLinkActive]="['link-active']">
-                        <a [routerLink]="['/fetch-data']">
+                        <a [routerLink]="['/availability']">
                             <span class='glyphicon glyphicon-th-list'></span> Availability
                         </a>
                     </li>

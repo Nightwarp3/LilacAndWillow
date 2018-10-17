@@ -7,14 +7,16 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './components/app/app.component';
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
+import { AvailabilityComponent } from './components/availability/availability.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         NavMenuComponent,
-        CounterComponent,
-        FetchDataComponent,
-        HomeComponent
+        HomeComponent,
+        AvailabilityComponent,
+        GalleryComponent
     ],
     imports: [
         CommonModule,
@@ -23,8 +25,8 @@ import { HomeComponent } from './components/home/home.component';
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
-            { path: 'counter', component: CounterComponent },
-            { path: 'fetch-data', component: FetchDataComponent },
+            { path: 'availability', component: AvailabilityComponent },
+            { path: 'gallery', component: GalleryComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]

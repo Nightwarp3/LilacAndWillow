@@ -2,6 +2,7 @@
 
 @Component({
     selector: 'availability',
-    templateUrl: './home.component.html'
+    templateUrl: './availability.component.html'
 })
+
 export class AvailabilityComponent {}

@@ -39,6 +39,7 @@ li.link-active a:focus {
     .navbar-brand {
         float: none;
         display: block;
+        padding: 0px;
     }
 }
 
@@ -53,6 +54,13 @@ li.link-active a:focus {
         border-radius: 0px;
         border-width: 0px;
         height: 25px;
+    }
+
+    .navbar-brand {
+        padding-left: 15px;
+        padding-bottom: 0px;
+        padding-right: 0px;
+        padding-top: 7px;
     }
 
     .navbar-header {
