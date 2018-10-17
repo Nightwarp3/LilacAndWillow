@@ -1,0 +1,11 @@
+﻿.header-main {
+    /*background-image: url(../../resources/LilacWillow.png);*/
+    background-color: lightblue;
+    width: calc(100% + 30px);
+    padding: 10%;
+    font-family: 'Brush Script MT';
+}
+.header-main h1 {
+    font-size: 76px;
+    color: olive;
+}

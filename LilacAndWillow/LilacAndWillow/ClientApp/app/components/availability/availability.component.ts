@@ -2,7 +2,8 @@
 
 @Component({
     selector: 'availability',
-    templateUrl: './availability.component.html'
+    templateUrl: './availability.component.html',
+    styleUrls: ['../Site.css']
 })
 
 export class AvailabilityComponent {}

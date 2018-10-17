@@ -1,1 +1,33 @@
-﻿<div></div>
+﻿<div class="row">
+    <div class="row bg-light">
+        <h1 class="col-sm-12">Portraits</h1>
+        <div class="col-sm-12 picture-wheel">
+            <div class="col-xs-10 carousel" id="carousel-portrait" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item" *ngFor="let portrait of portraits; let i = index" [ngClass]="{active: i === 0}">
+                        <img src="{{ portrait.imgSrc }}" width="{{ portrait.width }}" />
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-portrait" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-portrait" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <ul>
+        <li>
+            Portraits
+        </li>
+        <li>
+            Group Photos
+        </li>
+        <li>
+            Graduation
+        </li>
+    </ul>
+</div>

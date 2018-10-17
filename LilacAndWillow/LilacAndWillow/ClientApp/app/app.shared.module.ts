@@ -9,6 +9,7 @@ import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
 import { AvailabilityComponent } from './components/availability/availability.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
     declarations: [
@@ -16,7 +17,8 @@ import { GalleryComponent } from './components/gallery/gallery.component';
         NavMenuComponent,
         HomeComponent,
         AvailabilityComponent,
-        GalleryComponent
+        GalleryComponent,
+        FooterComponent
     ],
     imports: [
         CommonModule,
