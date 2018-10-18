@@ -1,17 +1,14 @@
-﻿li {
-    font-family: 'Brush Script MT';
-    font-size: xx-large;
-}
-
-h1 {
-    font-family: 'Brush Script MT';
-    font-size: xx-large;
+﻿h1 {
+    font-family: 'Kunstler Script';
+    font-size: 650%;
     margin: 10px;
 }
 
+h2 {
+    font-family: 'Brush Script MT'
+}
+
 .picture-wheel {
-    border: 1px solid #d67dff;
-    display: inline-block;
     max-height: 500px;
     overflow: visible;
     margin: 15px;
@@ -19,5 +16,23 @@ h1 {
 }
 
 .picture-wheel img {
-    height: 450px;
+    height: 500px;
+    width: auto;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+    .picture-wheel {
+        margin: 0;
+        max-height: 250px;
+    }
+
+    .picture-wheel img {
+        height: 250px;
+    }
+
+    div {
+        margin-bottom: 10px;
+    }
 }

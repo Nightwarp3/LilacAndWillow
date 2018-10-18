@@ -1,33 +1,95 @@
 ﻿<div class="row">
     <div class="row bg-light">
-        <h1 class="col-sm-12">Portraits</h1>
-        <div class="col-sm-12 picture-wheel">
-            <div class="col-xs-10 carousel" id="carousel-portrait" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="item" *ngFor="let portrait of portraits; let i = index" [ngClass]="{active: i === 0}">
-                        <img src="{{ portrait.imgSrc }}" width="{{ portrait.width }}" />
-                    </div>
+        <div class="col-sm-3">
+            <h1>Portraits</h1>
+        </div>
+        <div class="carousel picture-wheel col-sm-6" id="carousel-portrait" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="item" *ngFor="let portrait of portraits; let i = index" [ngClass]="{active: i === 0}">
+                    <img src="{{ portrait.imgSrc }}" width="{{ portrait.width }}" />
                 </div>
-                <a class="left carousel-control" href="#carousel-portrait" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-portrait" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
+            <a class="left carousel-control" href="#carousel-portrait" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-portrait" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="col-sm-2">
+            <ul>
+                <li>
+                    <h2>Locations</h2>
+                    <ul>
+                        <li>Wellsville, UT (Mountains)</li>
+                        <li>Pick your own</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
-    <ul>
-        <li>
-            Portraits
-        </li>
-        <li>
-            Group Photos
-        </li>
-        <li>
-            Graduation
-        </li>
-    </ul>
+    <div class="row">
+        <div class="col-sm-3 list-group">
+            <h1>Groups</h1>
+        </div>
+        <div class="carousel picture-wheel col-sm-6" id="carousel-groups" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="item" *ngFor="let portrait of portraits; let i = index" [ngClass]="{active: i === 0}">
+                    <img src="{{ portrait.imgSrc }}" width="{{ portrait.width }}" />
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-groups" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-groups" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="col-sm-2">
+            <ul>
+                <li>
+                    <h2>Locations</h2>
+                    <ul>
+                        <li>Wellsville, UT (Mountains)</li>
+                        <li>Pick your own</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row bg-light">
+        <div class="col-sm-3">
+            <h1>Graduation</h1>
+        </div>
+        <div class="carousel picture-wheel col-sm-6" id="carousel-grad" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="item" *ngFor="let portrait of portraits; let i = index" [ngClass]="{active: i === 0}">
+                    <img src="{{ portrait.imgSrc }}" width="{{ portrait.width }}" />
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-grad" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-grad" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="col-sm-2">
+            <ul>
+                <li>
+                    <h2>Locations</h2>
+                    <ul>
+                        <li>Wellsville, UT (Mountains)</li>
+                        <li>Pick your own</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
