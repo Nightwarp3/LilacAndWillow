@@ -1,1 +1,33 @@
-﻿
+﻿h2 {
+    font-family: 'Brush Script MT';
+}
+
+@media (max-width: 768px) {
+    .calendar iframe {
+        width: calc(100% - 10px);
+        height: 280px;
+    }
+
+    .calendar {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+}
+
+@media (min-width: 768px) {
+    .calendar iframe {
+        width: 800px;
+        height: 600px;
+    }
+
+    .calendar {
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 92px;
+    }
+}

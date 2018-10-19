@@ -1,11 +1,7 @@
 ﻿.header-main {
-    /*background-image: url(../../resources/LilacWillow.png);*/
-    background-color: lightblue;
+    background: #ffffff url(http://static.boredpanda.com/blog/wp-content/uuuploads/winter-landscapes/winter-landscapes-41.jpg) no-repeat top;
     width: calc(100% + 30px);
     padding: 10%;
     font-family: 'Brush Script MT';
-}
-.header-main h1 {
-    font-size: 76px;
-    color: olive;
+    background-size: cover;
 }

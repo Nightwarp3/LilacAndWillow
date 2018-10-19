@@ -6,3 +6,11 @@
     background-color: #5e5e5e;
     color: #ffffff;
 }
+
+h1 {
+    font-size: 76px;
+    color: olive;
+    font-family: 'Kunstler Script';
+    font-weight: bold;
+    text-align: center;
+}
