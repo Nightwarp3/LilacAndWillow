@@ -1,4 +1,5 @@
-﻿import { Component } from '@angular/core';
+﻿import { Component, OnInit } from '@angular/core';
+import { AvailabilityService } from './availability.service';
 
 @Component({
     selector: 'availability',
@@ -6,4 +7,13 @@
     styleUrls: ['../Site.css']
 })
 
-export class AvailabilityComponent {}
+export class AvailabilityComponent implements OnInit {
+    calendar: object = {};
+
+    constructor(private availabilityService: AvailabilityService) {
+    }
+
+    ngOnInit() {
+        this.calendar = this.availabilityService.getCalendar();
+    }
+}
