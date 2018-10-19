@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <None Remove="ClientApp\app\components\availability\availability.component.ts" />
+    <None Remove="ClientApp\app\components\availability\availability.service.ts" />
     <None Remove="ClientApp\app\components\footer\footer.component.ts" />
     <None Remove="ClientApp\app\components\gallery\gallery.component.ts" />
     <None Remove="ClientApp\app\shared\photo.ts" />
@@ -29,6 +30,7 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\app\components\availability\availability.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\availability\availability.service.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\footer\footer.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\gallery\gallery.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\shared\photo.ts" />
