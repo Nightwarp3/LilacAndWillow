@@ -5,3 +5,8 @@
     font-family: 'Brush Script MT';
     background-size: cover;
 }
+
+img {
+    max-height: initial;
+    width: calc(100% - 10px);
+}

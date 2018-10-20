@@ -1,11 +1,11 @@
 {
   "name": "LilacAndWillow",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "test": "karma start ClientApp/test/karma.conf.js"
   },
-  "devDependencies": {
+  "dependencies": {
     "@angular/animations": "4.2.5",
     "@angular/common": "4.2.5",
     "@angular/compiler": "4.2.5",
